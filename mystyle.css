@@ -190,17 +190,72 @@ header .sticky .logo,header.sticky ul li a{
     
 }
 .card{
-    max-height:200px;
+    max-height:170px;
+    min-height:170px;
     max-width:200px;
     margin:auto;
+}
+.card .textsz{
+    font-size: 12px;
 }
 
 #skills{
     min-width:100%;
     max-height:100vh;
     align-items: center;
+    background-image:url(images/background4.jpg);
+    background-attachment:fixed;
+    background-size:cover;
+  
+   
 }
+
 #skills .row{
     font-weight: bold;
 
+}
+
+
+.projects{
+    position:relative;
+    top:0px;
+    left:0px;
+    padding-left:0px;
+    margin-left:0px;
+   
+}
+.PROJECTS h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+   
+}
+.PROJECTS img{
+    max-width: 400px;
+}
+#project1{
+    background-image:url(images/background5.jpg) ;
+    background-attachment: fixed;
+    background-size: cover;
+   
+}
+#project1 a{
+    text-decoration:none;
+    color:white;
+    font-style:italic;
+    font-weight: bold ;
+}
+
+.projimg{
+    max-height: 350px;
+    width:100%;
+    border-radius: 100%;
+}
+footer {
+  text-align: center;
+  padding: 3px;
+  padding-top:10px;
+  margin:auto;
+  align-items: center;
+  background-color: black;
+  color: white;
 }

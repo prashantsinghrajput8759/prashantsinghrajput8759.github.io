@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <title>My Portfolio</title>
     <link rel="stylesheet" type="text/css" href="mystyle.css">
-    <script language="javascript" src="myjs.js"></script>
+    <!--bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
@@ -22,10 +22,9 @@
         <ul class="menu">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#Testimonial">Testimonial</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#project1">Projects</a></li>
+
 
 
         </ul>
@@ -107,11 +106,15 @@
     <!-- about section end-->
 
     <!--skills section-->
+
     <section id="skills">
-        <div class="container-fluid text-center bg-light pt-3">
-            <h1 class="text-warning">Skills</h1>
+        <div class="container-fluid text-center  pt-3">
+            <h1 class="text-warning ">Skills</h1>
             <hr class="w-25 mx-auto mb-5 ">
-            <div class="row mx-auto">
+        </div>
+        <div class="container-fluid text-center  pt-3 ">
+
+            <div class="row mx-auto skillsrow">
                 <div class="col-lg-3 col-md-3 col-xl-3 col-12 px-2 mb-5  ">
                     <div class="card ">
                         <img src="images/htmllogo.png" class="card-img-top img-fluid" alt="htmllogo">
@@ -168,11 +171,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-3 col-xl-3 col-12 px-2 mb-5">
+                <div class="col-lg-3 col-md-3 col-xl-3 col-12 px-2 ">
                     <div class="card">
                         <img src="images/cp.jpg" class="card-img-top img-fluid" alt="django logo">
                         <div class="card-body">
-                            <p class="card-text">4* At Codechef<br><span class="text-info">Specialist</span> At
+                            <p class="card-text textsz">4* At Codechef<br><span class="text-info">Specialist</span> At
                                 Codeforces</p>
                         </div>
                     </div>
@@ -183,6 +186,51 @@
 
     </section>
 
+    <section id="project1">
+        <div class="container-fluid text-center PROJECTS text-light">
+            <h1>Projects</h1>
+            <hr class="w-25 mx-auto">
+        </div>
+        <div class="container-fluid text-center PROJECTS">
+
+            <div class="row projects  text-center ">
+                <div class="col-6 px-2 mb-5 mt-5 text-left text-info ">
+                    <img src="images/img1.jpg" class="projimg">
+                </div>
+                <div class="col-6 px-2 mb-5 mt-5">
+                    <img src="images/codeforces2.png" class="projimg">
+
+                </div>
+            </div>
+            <div class="row projects  text-center ">
+                <div class="col-6  mb-5  text-left  text-light">
+                    <p>Made a Note App . User can make important Note as well as save it for future reference.You can
+                        mark important as well as non important which makes it very easy to distinguish between
+                        different notes.(Html,Bootstrap,CSS,Javascript)</p>
+                        <p>click to visit the app: <a href="https://prashantsinghrajput8759.github.io/make-my-note/" target="_blank">Make my Note</a></p>
+                </div>
+                <div class="col-6 mb-5 text-left text-light  ">
+                    <p>Made a codeforces visualizer . User can input any Username and can see particular user rating as
+                        well as other informations in the form of tables and graph.(Html,Css,Jquery,JS charts,Codeforces
+                        APi)</p>
+                        <p>click to visit the app: <a href="https://prashantsinghrajput8759.github.io/codeforces-stats-analyzer/" target="_blank">Codeforces Analyzer</a></p>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+    </section>
+
+    <!--skill section ended-->
+    <footer>
+        <p>Author:Prashant Kumar Singh<br>Email:singhprashant8759@gmail.com</p>
+
+    </footer>
+
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
@@ -191,6 +239,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
         integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
         crossorigin="anonymous"></script>
+    <script language="javascript" src="myjs.js"></script>
 </body>
 
 </html>
