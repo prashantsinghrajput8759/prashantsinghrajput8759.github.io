@@ -4,7 +4,9 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
     <title>Prashant Kumar Singh</title>
     <link rel="stylesheet" type="text/css" href="mystyle.css">
@@ -19,22 +21,26 @@
 </head>
 
 <body>
+
     <header>
 
         <!--menu tab-->
-        <a href="#" class="logo">Portfolio</a>
 
+        <a href="#" class="logo">Portfolio</a>
+        <div class="toggle" onclick="menutoggle();"></div>
         <ul class="menu">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#project1">Projects</a></li>
+
+            <li><a href="#home" onclick="menutoggle();">Home</a></li>
+            <li><a href="#about" onclick="menutoggle();">About</a></li>
+            <li><a href="#skills" onclick="menutoggle();">Skills</a></li>
+            <li><a href="#project1" onclick="menutoggle();">Projects</a></li>
 
 
 
         </ul>
 
     </header>
+
     <!-- banner section-->
     <section class="banner" id="home">
 
@@ -47,35 +53,37 @@
                     <a href="#about" class="btn btn-info">About Me</a>
                 </div>
             </div>
-            <div class="row mt-5 ">
-                <div class="col-12  text-center mx-auto mt-5 fabicon">
-                    <div class="wrapper">
+            <!---  <div class="row mt-5 ">
+                <div class="col-12  text-center mx-auto mt-5 fabicon">-->
+            <div class="wrapper">
 
-                        <div class="button">
-                            <div class="icon">
-                                <i class="fab fa-facebook-f"></i>
-                            </div>
-                            <span><a href="https://www.facebook.com/profile.php?id=100003665525730"
-                                    target="_blank">Facebook</a></span>
-
-                        </div>
-
-                        <div class="button">
-                            <div class="icon">
-                                <i class="fab fa-linkedin"></i>
-                            </div>
-                            <span><a href="https://www.linkedin.com/in/prashant-singh-0429a7190"
-                                    target="_blank">LinkedIn</a></span>
-
-                        </div>
-                        <div class="button">
-                            <div class="icon">
-                                <i class="fab fa-github"></i>
-                            </div>
-                            <span><a href="https://github.com/prashantsinghrajput8759" target="_blank">Github</a></span>
-
-                        </div>
+                <div class="button">
+                    <div class="icon">
+                        <a href="https://www.facebook.com/profile.php?id=100003665525730" target="_blank"> <i
+                                class="fab fa-facebook-f"></i></a>
                     </div>
+                    <span><a href="https://www.facebook.com/profile.php?id=100003665525730"
+                            target="_blank">Facebook</a></span>
+
+                </div>
+
+                <div class="button">
+                    <div class="icon">
+                        <a href="https://www.linkedin.com/in/prashant-singh-0429a7190" target="_blank"> <i
+                                class="fab fa-linkedin"></i></a>
+                    </div>
+                    <span><a href="https://www.linkedin.com/in/prashant-singh-0429a7190"
+                            target="_blank">LinkedIn</a></span>
+
+                </div>
+                <div class="button">
+                    <div class="icon">
+                        <a href="https://github.com/prashantsinghrajput8759" target="_blank"><i
+                                class="fab fa-github"></i></a>
+                    </div>
+                    <span><a href="https://github.com/prashantsinghrajput8759" target="_blank">Github</a></span>
+
+
                 </div>
             </div>
 
@@ -219,44 +227,41 @@
             <h1>Projects</h1>
             <hr class="w-50 mx-auto hor">
         </div>
-        <div class="container-fluid text-center ">
-            <hr class="w-50 mx-auto hor">
-            <div class="row  ">
-                <div class="col-6 px-2 col-6 cards my-5">
-                    <img src="images/weather_bg.png" class="projimg">
-                    <p>Made a Weather App . User will be able to see the current temperature of any place he search for.
-                        (Html,CSS,Javascript,Node JS,Express)<br>
-                        click to visit the app: <a href="https://aaj-ka-mausham.herokuapp.com/" target="_blank">Check
-                            The Weather</a></p>
-                </div>
-            </div>
-            <hr class="w-50 mx-auto hor">
-            <div class="row  ">
-                <div class="col-6 px-2 col-6 cards">
 
-                    <p>Made a Note App . User can make important Note as well as save it for future reference.You can
-                        mark important as well as non important which makes it very easy to distinguish between
-                        different notes.(Html,Bootstrap,CSS,Javascript)<br>
-                        click to visit the app: <a href="https://prashantsinghrajput8759.github.io/make-my-note/"
-                            target="_blank">Make my Note</a></p>
-                    <img src="images/img1.jpg" class="projimg">
-                </div>
-            </div>
-            <hr class="w-50 mx-auto hor">
-            <div class="row  ">
-                <div class="col-6 px-2 col-6 cards">
-                    <img src="images/codeforces2.png" class="projimg">
-                    <p>Made a codeforces visualizer . User can input any Username and can see particular user rating as
-                        well as other informations in the form of tables and graph.(Html,Css,Jquery,JS charts,Codeforces
-                        APi)<br>
-                        click to visit the app: <a
-                            href="https://prashantsinghrajput8759.github.io/codeforces-stats-analyzer/"
-                            target="_blank">Codeforces Analyzer</a>
-                    </p>
+        <hr class="w-50 mx-auto hor">
+        <div class="cards">
+            <img src="images/weather_bg.png" class="projimg">
+            <p>Made a Weather App . User will be able to see the current temperature of any place he search for.
+                (Html,CSS,Javascript,Node JS,Express)<br>
+                click to visit the app: <a href="https://aaj-ka-mausham.herokuapp.com/" target="_blank">Check
+                    The Weather</a></p>
 
-                </div>
-            </div>
-            <hr class="w-50 mx-auto hor">
+        </div>
+        <hr class="w-50 mx-auto hor">
+       <div class="cards">
+        <img src="images/img1.jpg" class="projimg">
+                <p>Made a Note App . User can make important Note as well as save it for future reference.You can
+                    mark important as well as non important which makes it very easy to distinguish between
+                    different notes.(Html,Bootstrap,CSS,Javascript)<br>
+                    click to visit the app: <a href="https://prashantsinghrajput8759.github.io/make-my-note/"
+                        target="_blank">Make my Note</a></p>
+               
+          
+        </div>
+        <hr class="w-50 mx-auto hor">
+            <div class="cards">
+                <img src="images/codeforces2.png" class="projimg">
+                <p>Made a codeforces visualizer . User can input any Username and can see particular user rating as
+                    well as other informations in the form of tables and graph.(Html,Css,Jquery,JS charts,Codeforces
+                    APi)<br>
+                    click to visit the app: <a
+                        href="https://prashantsinghrajput8759.github.io/codeforces-stats-analyzer/"
+                        target="_blank">Codeforces Analyzer</a>
+                </p>
+
+            
+        </div>
+        <hr class="w-50 mx-auto hor">
 
 
 
